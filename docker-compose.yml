@@ -1,0 +1,11 @@
+services:
+  regexr:
+    build: .
+    image: regexr:1.0.0
+    container_name: regexr
+    restart: unless-stopped
+    # you can change 3004 to another port
+    ports:
+      - "3004:5000"
+    volumes:
+      - .:/app
