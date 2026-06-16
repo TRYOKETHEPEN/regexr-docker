@@ -4,7 +4,7 @@ services:
     image: regexr:1.0.0
     container_name: regexr
     restart: unless-stopped
-    # you can change 3004 to another port
+    # Access this service via http://[host IP]:3004. You may also replace 3004 with any other port number.
     ports:
       - "3004:5000"
     volumes:
